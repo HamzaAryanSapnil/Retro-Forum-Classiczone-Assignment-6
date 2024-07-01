@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font mulish and inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/6d245becde.js" crossorigin="anonymous"></script>
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                navBgColThreePercent: "#12132D08",
+                navBtnBg: "#797DFC",
+                bannerBg: "#12132D",
+                bannerBgSeventy: "#12132DB3",
+                bannerBgCardEighty: "#12132DCC",
+                bannerBgCardSixty: "#12132D99",
+                bannerBgCardFifty: "#12132d80",
+                hrTen: "#30325E1A",
+                footerBgLinearFirstValue: "#12132d80",
+              }
+              
+            },
+            fontFamily: {
+              "inter": ["Inter", "sans-serif"],
+              "mulish": ["Mulish", "sans-serif"],
+            }
+          }
+        }
+      </script>
+
+      <title>ClassicZone</title>
+</head>
+<body>
+    <header class="font-mulish container mx-auto my-8 px-2">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li class="tooltip bg-navBgColThreePercent rounded-full h-10 w-10 flex justify-center items-center" data-tip="Home"><a><i class="fa-solid fa-house"></i></a></li>
+                <li class="tooltip bg-navBgColThreePercent rounded-full h-10 w-10 flex justify-center items-center" data-tip="Edit"><a><i class="fa-solid fa-pencil"></i></a></li>
+                <li class="tooltip bg-navBgColThreePercent rounded-full h-10 w-10 flex justify-center items-center" data-tip="Add"><a><i class="fa-solid fa-user-plus"></i></a></li>
+                <li class="tooltip bg-navBgColThreePercent rounded-full h-10 w-10 flex justify-center items-center" data-tip="Language"><a><i class="fa-regular fa-flag"></i></a></li>
+              </ul> 
+            </div> 
+            <a class="btn btn-ghost  font-black text-xl md:text-4xl">ClassicZone</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            
+          </div>
+          <div class="navbar-end">
+            <ul class="menu menu-horizontal px-1 hidden lg:flex gap-x-8 mr-8">
+              <li class="tooltip bg-navBgColThreePercent rounded-full h-10 w-10 text-center flex justify-center items-center" data-tip="Home"><a><i class="fa-solid fa-house"></i></a></li>
+              <li class="tooltip bg-navBgColThreePercent rounded-full h-10 w-10 flex justify-center items-center" data-tip="Edit"><a><i class="fa-solid fa-pencil"></i></a></li>
+              <li class="tooltip bg-navBgColThreePercent rounded-full h-10 w-10 flex justify-center items-center" data-tip="Add"><a><i class="fa-solid fa-user-plus"></i></a></li>
+              <li class="tooltip bg-navBgColThreePercent rounded-full h-10 w-10 flex justify-center items-center" data-tip="Language"><a><i class="fa-regular fa-flag"></i></a></li>
+            </ul>
+            <a class="btn bg-navBtnBg text-white rounded-full font-bold md:text-xl">Button</a>
+          </div>
+        </div>
+      </nav>
+
+
+      
+      <section class="mt-8 bg-bannerBg bg-cover  bg-no-repeat  rounded-3xl flex flex-col lg:flex-row justify-center text-center  lg:justify-around items-center py-24 px-7 " style="background-image: url('images/bgbanner.png');">
+       
+        <div class="space-y-6 mb-6">
+          <h1 class="text-4xl lg:text-6xl font-bold  text-white leading-snug">Welcome to the <br> <span class="bg-gradient-to-r from-navBtnBg to-slate-700 bg-clip-text text-transparent font-black">ClassicZone</span> Forum</h1>
+          <p class="font-medium text-xl text-slate-300 leading-8">Share your favorite opinion and win and wp <br> forum coffee mug!</p>
+          <label class="bg-white input input-bordered flex items-center md:gap-2  rounded-full ">
+            <input id="search-field" type="text" class="grow" placeholder="Search anything here" />
+            <span id="search-btn" class="badge badge-info p-2 lg:p-4 bg-navBtnBg text-white font-bold text-base lg:text-xl">Search</span>
+          </label>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 space-y-6 text-bannerBgCardEighty font-medium text-2xl text-start">
+          <div class="flex bg-white justify-between gap-x-14">
+            <h3>Registered Users</h3>
+            <p>01</p>
+          </div>
+          <div class="flex bg-white justify-between gap-x-14">
+            <h3>Forum</h3>
+            <p>05</p>
+          </div>
+          <div class="flex bg-white justify-between gap-x-14">
+            <h3>Topics</h3>
+            <p>01</p>
+          </div>
+          <div class="flex bg-white justify-between gap-x-14">
+            <h3>Replies</h3>
+            <p>01</p>
+          </div>
+        </div>
+        
+      </section>
+    </header>
+    <main class=" space-y-32 container mx-auto my-8 px-2 mt-14 md:mb-16">
+
+      
+
+      
+      <section>
+        
+        <header class="text-center mb-10">
+          <h1 class="font-mulish text-4xl font-black mb-6">
+            Let's Discuss
+          </h1>
+          <p class="font-normal text-lg font-inter text-bannerBgCardSixty">
+            Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+          </p>
+        </header>
+
+        
+        <div id="loader" class="text-center hidden">
+          <span class="loading loading-spinner text-secondary"></span>
+        </div>
+
+       
+        <main class="flex flex-col lg:flex-row lg:gap-x-4 gap-y-6 justify-between mt-12">
+         
+          <section id="lets-discuss-posts-container-section" class="lg:w-4/6 space-y-8">
+            <!-- !Nothing here cause api will show for me -->
+          </section>
+
+         
+          <section  class="flex-1">
+           
+          
+            <div class="card  bg-base-100 shadow-xl p-8 lg:p-12">
+              <div id="watch-card-div">
+                <div class="flex justify-between w-full text-center mb-4">
+                  <h2 class="card-title font-mulish text-bannerBg font-bold text-xl">Title</h2>
+                <p><i id="mark-read" class="fa-solid fa-check-double text-bannerBgCardSixty"></i> Mark as read (<span id="watch-card-views">0</span>)</p>
+                </div>
+                
+              </div>
+            </div>
+          </section>
+
+        </main>
+      </section>
+
+      
+      <section class="bg-bannerBg font-mulish flex flex-col md:flex-row justify-center items-center  p-10 lg:p-24 rounded-3xl gap-y-14 md:gap-x-10">
+        <div class="space-y-6 md:space-y-10">
+          <h2 class="text-white text-5xl font-black">Join Our Forum</h2>
+          <p class="text-slate-300 text-lg">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+          <button class="btn bg-navBtnBg text-white  rounded-full border-none font-bold text-base lg:text-xl  ">Registered Now</button>
+        </div>
+        <div>
+          <img src="images/joinforum.png" alt="" srcset="">
+        </div>
+      </section>
+
+        
+        <section>
+          <header class="text-center mb-10">
+            <h1 class="font-mulish text-4xl font-black mb-6">
+              Latest Post
+            </h1>
+            <p class="font-normal text-lg font-inter text-bannerBgCardSixty">
+              Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+            </p>
+          </header>
+            
+            <div id="latest-post-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+               <!-- nothing's here cause api will show for me -->
+            </div>
+        </section>
+    </main>
+    <footer class="bg-zinc-100  font-mulish flex flex-col justify-center items-center gap-y-8 py-28 p-6">
+      <h2 class="text-bannerBg text-4xl font-black">ClassicZone</h2>
+      <p class="font-normal text-base text-bannerBgSeventy text-center md:w-3/4 lg:w-2/4">Welcome to ClassicZone Forum, your ultimate destination for a blend of comedy coding, tech humor, and a myriad of fascinating topics. Explore our collection of witty posts, insightful articles, and entertaining content that will tickle your funny bone and ignite your curiosity. Join our community of enthusiasts as we dive into the world of laughter and innovation. Let's code, laugh, and learn together!</p>
+      <div class="flex text-3xl gap-x-6 ">
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <hr class="w-2/3 bg-hrTen text-hrTen border-hrTen">
+      <p class="text-bannerBgCardFifty">2017, All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
+
+<!-- let's check it one last time -->
